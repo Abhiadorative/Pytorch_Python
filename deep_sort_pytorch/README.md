@@ -1,53 +1,13 @@
 # Deep Sort with PyTorch
-
-![](demo/demo.gif)
-
-## Update(1-1-2020)
-Changes
-- fix bugs
-- refactor code
-- accerate detection by adding nms on gpu
-
-## Latest Update(07-22)
-Changes
-- bug fix (Thanks @JieChen91 and @yingsen1 for bug reporting).  
-- using batch for feature extracting for each frame, which lead to a small speed up.  
-- code improvement.
-
-Futher improvement direction  
-- Train detector on specific dataset rather than the official one.
-- Retrain REID model on pedestrain dataset for better performance.
-- Replace YOLOv3 detector with advanced ones.
-
-**Any contributions to this repository is welcome!**
-
-
-## Introduction
 This is an implement of MOT tracking algorithm deep sort. Deep sort is basicly the same with sort but added a CNN model to extract features in image of human part bounded by a detector. This CNN model is indeed a RE-ID model and the detector used in [PAPER](https://arxiv.org/abs/1703.07402) is FasterRCNN.  
 However in original code, the CNN model is i# Deep Sort with PyTorch
 
 ![](demo/demo.gif)
 
-## Update(1-1-2020)
-Changes
-- fix bugs
-- refactor code
-- accerate detection by adding nms on gpu
-
-## Latest Update(07-22)
-Changes
-- bug fix (Thanks @JieChen91 and @yingsen1 for bug reporting).  
-- using batch for feature extracting for each frame, which lead to a small speed up.  
-- code improvement.
-
 Futher improvement direction  
 - Train detector on specific dataset rather than the official one.
 - Retrain REID model on pedestrain dataset for better performance.
 - Replace YOLOv3 detector with advanced ones.
-
-**Any contributions to this repository is welcome!**
-
-
 
 ## Dependencies
 - python 3 (python2 not sure)
@@ -146,11 +106,4 @@ Then you can try [train.py](deep_sort/deep/train.py) to train your own parameter
 ![2.jpg](demo/2.jpg)
 
 
-## References
-- paper: [Simple Online and Realtime Tracking with a Deep Association Metric](https://arxiv.org/abs/1703.07402)
 
-- code: [nwojke/deep_sort](https://github.com/nwojke/deep_sort)
-
-- paper: [YOLOv3](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
-
-- code: [Joseph Redmon/yolov3](https://pjreddie.com/darknet/yolo/)
